@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Random Number Generator</title>
+  </head>
+  <body>
+    <h1>Random Number:</h1>
+    <p id="number">
+      <script>
+        function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        document.getElementById("number").innerHTML = getRandomInt(000000, 999999);
+      </script>
+    </p>
+  </body>
+</html>
